@@ -134,7 +134,7 @@ const ClassesManager = ({ setError }) => {
           <option value="">Select Trainer</option>
           {trainers && trainers.map((trainer) => (
             <option key={trainer._id} value={trainer._id}>
-              {trainer.name}
+              {trainer && trainer.name}
             </option>
           ))}
         </select>
