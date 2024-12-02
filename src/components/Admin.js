@@ -47,7 +47,7 @@ const Admin = () => {
 
 const ClassesManager = ({ setError }) => {
   const [classes, setClasses] = useState([]);
-  const [trainers, setTrainers] = useState([]);
+  const [trainers, setTrainers] = useState([{name:'trainer1', email:'trainer1@gmail.com', id:'1'}, {name:'trainer2', email:'trainer2@gmail.com', id:'2'}, {name:'trainer3', email:'trainer3@gmail.com', id:'3'}]);
   const [formData, setFormData] = useState({
     name: '',
     trainer: '',
