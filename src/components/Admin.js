@@ -132,7 +132,7 @@ const ClassesManager = ({ setError }) => {
           required
         >
           <option value="">Select Trainer</option>
-          {trainers.map((trainer) => (
+          {trainers && trainers.map((trainer) => (
             <option key={trainer._id} value={trainer._id}>
               {trainer.name}
             </option>
