@@ -163,7 +163,7 @@ const ClassesManager = ({ setError }) => {
         {classes.map((classItem) => (
           <div key={classItem._id} className={styles.classCard}>
             <h3>{classItem.name}</h3>
-            <p>Trainer: {classItem.trainer.name}</p>
+            <p>Trainer: {classItem && classItem.trainer && classItem.trainer.name}</p>
             <p>Date: {new Date(classItem.date).toLocaleDateString()}</p>
             <p>Time: {classItem.startTime}</p>
             <p>Enrolled: {classItem.currentEnrollment}/{classItem.maxCapacity}</p>
