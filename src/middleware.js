@@ -17,7 +17,7 @@ export async function middleware(req) {
 
   try {
     // Verify the token and get user role
-    const response = await axios.get('http://localhost:3000/api/auth/verify', {
+    const response = await axios.get('https://gymflex.vercel.app/api/auth/verify', {
       headers: {
         Authorization: `${token}`,
       },
