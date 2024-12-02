@@ -74,6 +74,8 @@ export default function Membership() {
               Join GymFlex
             </h1>
 
+            <p className="text-center text-sm text-gray-600">admin-email: admin@gmail.com, admin-password: admin</p>
+
             {error && (
               <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
                 {error}
